@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  margin-top: 2vh;
+}
+
+.container{
+    margin: 3vh auto;
+    width: 900px;
+    height: 50vh;
+    background-color: aliceblue;
+    
+}
+.slider{
+    height: 100%;
+    width: 100%;
+}
+.slideImg{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    margin: 3vh auto;
+  }
+
+  button{
+    background: red;
+font-size: large;
+font-weight: bold;
+padding: 8px;
+border-radius: 17px;
+border: 2px solid black;
+  }
+
+
