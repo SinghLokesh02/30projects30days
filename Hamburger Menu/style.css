@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  height: 60px;
+  display: flex;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  padding: 20px;
+}
+a:hover {
+  color: rgb(80, 218, 80);
+}
+
+ul {
+  display: flex;
+  margin-left: 10px;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 10px;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: large;
+}
+
+ul li:hover {
+  color: rgb(80, 218, 80);
+}
+
+.content{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vh;
+ 
+}
+span{
+  color: red;
+}
+
+/* @media only screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  nav ul{
+    
+    display: none;
+  }
+  nav a{
+    display: none;
+  }
+  .hamburg{
+    background-image: url("Menu-Icon2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    padding: 1vh;
+    margin-top: 0.78vh;
+    margin-left: 90%;
+  }
+} */
+
+/* Just By using HTML CSS No transition */
+@media only screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    display: none;
+  }
+  nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  ul li {
+    list-style: none;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: large;
+    margin: 0;
+  }
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding: 20px;
+  }
+  a:hover {
+    color: rgb(80, 218, 80);
+  }
+  .hamburg {
+    background-image: url("Menu-Icon2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    padding: 1vh;
+    margin-top: 0.78vh;
+    margin-left: 90%;
+  }
+}
