@@ -1,4 +1,3 @@
-
 let get = document.getElementsByClassName("hamburg")[0];
 var nav = document.getElementsByTagName("ul")[0];
 var menu = document.querySelector("a");
