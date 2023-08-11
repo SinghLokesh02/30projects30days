@@ -1,0 +1,27 @@
+/* Style for Preloader of the website */
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    background-image: url(pre.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    display: block;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get{
+    color: red;
+}
+#home{
+align-self: center;
+}
