@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: fit-content;
+    padding: 0;
+    height: 100vh;
+    background-color: #20988a;
+    overflow: hidden;
+    margin-left: 2px;
+}
+
+.contain1{
+    margin-top: 5vh;
+    margin-left:0px;
+    display: flex;
+}
+
+/* Style for Logo */
+.logo{
+    height: 30px;
+    width: 30px;
+    margin-left: 1vh;
+     
+}
+
+p{
+    margin: auto 3vh;
+}
+
+.contain1:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+
+.slider:first-child{
+    float: right;
+    margin: 1vh auto;
+}
+
+p>a{
+    text-decoration: none;
+    color: white;
+}
