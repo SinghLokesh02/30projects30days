@@ -13,7 +13,7 @@ for(button of buttons) {
         else if(value === 'AC'){
             curDisplay = '0';
         }
-        else if(value === '<-'){
+        else if(value === 'del'){
             curDisplay = curDisplay.slice(0,-1);
         }
         else{
