@@ -1,5 +1,14 @@
 // Genearate Random Color
 
+// Method for Checking the string contains only empty string
+let checkSpace = (s) => {
+  let count = 0;
+  for(let i = 0;i<s.length;i++){
+    if(s[i] == ' ')count++;
+  }
+  return count == s.length?0:1;
+};
+
 let GetRandomColor = () => {
   let colors = [
     "gray",
@@ -24,8 +33,9 @@ const get_div = document.getElementsByClassName("todo")[0];
 let input = document.getElementsByTagName("input")[0];
 let count = 1,
   this_order = 100;
-addTaskBtn.addEventListener("click", function () {
-  if (input.value.length > 0) {
+
+let addTask = () => {
+  if (checkSpace(input.value)) {
     let taskText = input.value.trim();
     let taskItem = document.createElement("div");
     taskItem.classList.add(`Item`);
@@ -57,9 +67,21 @@ addTaskBtn.addEventListener("click", function () {
 
     get_div.appendChild(taskItem);
     input.value = "";
+  } else {
+    alert("First Add some Task ");
   }
 
   count++;
-});
+};
 
-// Get the task Crossed when click on the input type checkbox
+// Event listener for button click
+addTaskBtn.addEventListener("click", addTask);
+
+// Event listener for Enter key press
+input.addEventListener("keypress", function (event) {
+  // Check if the pressed key is Enter (key code 13)
+
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
