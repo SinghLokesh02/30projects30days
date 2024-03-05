@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root{
-    --text-color: #d63384;
+:root {
+  --text-color: #d63384;
 }
 img {
   border: none;
@@ -12,52 +12,71 @@ img {
 }
 
 /* Reset some default styles */
-.down{
-    display: flex;
-    color: var(--text-color);
+.down {
+  display: flex;
+  color: var(--text-color);
 }
 /* Apply a background color and font styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  ;
 }
 
 .container {
   text-align: center;
- margin-bottom: 10vh;
-
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Style the heading */
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   color: #333;
+  text-align: center;
+  margin: 4vh 0px;
 }
 
 /* Style the input and button */
 #input {
-  padding: 10px;
+  padding: 7px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 300px;
+  width: 40%;
   font-size: 16px;
+  min-width: 300px;
 }
 
 #btn {
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 5px 14px;
+  background-color: red;
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  width: 40%;
+  min-width: 300px;
+}
+
+#btn:hover {
+  transition-duration: 0.7s;
+  background-color: lime;
 }
 
 .show_data {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  padding-right: 17px;
 }
 
 label {
@@ -97,24 +116,17 @@ span {
 
 /* Style the avatar image */
 #avatar_url {
-  max-width: 300px;
+  max-width: 150px;
   border-radius: 50%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-
-input[type = "text"] {
-    margin-right: 5vh;
-  }
 /* Add spacing for the form and data container */
 @media screen and (max-width: 660px) {
-    .small {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-    input[type = "text"] {
-      margin-bottom: 3vh;
-    }
+  .small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
+}
