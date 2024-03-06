@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  transform: scale(0);
+  position: relative;
+}
+
+.box {
+  background-color: coral;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  color: white;
+}
