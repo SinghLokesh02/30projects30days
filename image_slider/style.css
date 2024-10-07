@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  padding: 10px;
+  width: 100vw;
+  height: 90vh;
+}
 .center {
   text-align: center;
   color: red;
@@ -10,36 +15,66 @@
   margin-top: 2vh;
 }
 
-.container{
-    margin: 3vh auto;
-    width: 900px;
-    height: 50vh;
-    background-color: aliceblue;
-    
+.container {
+  margin: 3vh auto;
+  width: 80%;
+  height: 50vh;
+  background-color: aliceblue;
+  border-radius: 10px;
 }
-.slider{
-    height: 100%;
-    width: 100%;
+.slider {
+  height: 100%;
+  width: 100%;
 }
-.slideImg{
-    height: 100%;
-    width: 100%;
-    
+img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
 }
 
-.btn{
-    display: flex;
-    justify-content: space-around;
-    margin: 3vh auto;
+.btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh auto;
+  width: 100%;
+}
+
+button {
+  background: red;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 25px;
+}
+button:hover {
+  background: rgb(208, 4, 4);
+  color: white;
+}
+@media only screen and (max-width: 400px) {
+  .btn {
+    flex-direction: column;
+    gap: 12px;
   }
-
-  button{
-    background: red;
-font-size: large;
-font-weight: bold;
-padding: 8px;
-border-radius: 17px;
-border: 2px solid black;
+  button {
+    display: block;
+    width: 100%;
   }
+}
 
+/* Slide Image with click on Next or Previous Button */
 
+.slideRight{
+  animation-name: Slideright;
+  animation-duration: 3s;
+}
+
+@keyframes Slideright {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(100%);
+
+  }
+}

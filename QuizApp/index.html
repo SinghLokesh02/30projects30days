@@ -3,15 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Project 1</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="./index.js" defer></script>
+    <title>Quiz App</title>
+    <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
+    <script src="./main.js" async></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <!-- 
-make a rectangle and when we move mouse on that rectangle on the left side we want to gradually change the color of that rectangle to red and when we move mouse to the right side we want to change the color to blue.
-     -->
-
-    <div id="rect"></div>
+  <body oncontextmenu="return false;">
+    <div class="container">
+      <div class="main-container">
+        <label for=""></label>
+        <div class="box box-1">
+          <input type="radio" name="quiz" id="ques1" />
+          <label for="ques1"></label>
+        </div>
+        <div class="box box-2">
+          <input type="radio" name="quiz" id="ques2" />
+          <label for="ques2"></label>
+        </div>
+        <div class="box box-3">
+          <input type="radio" name="quiz" id="ques3" />
+          <label for="ques3"></label>
+        </div>
+        <div class="box-4 box">
+          <input type="radio" name="quiz" id="ques4" />
+          <label for="ques4"></label>
+        </div>
+        <div class="btn next-button">
+          <button class="start">Next Question</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

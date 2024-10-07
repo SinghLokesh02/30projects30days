@@ -1,0 +1,213 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculater</title>
+    <script src="index.js" defer></script>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <div class="main">
+      <h1>Calculator</h1>
+      <div class="calculater">
+        <input type="text" name="screen" id="screen" readonly placeholder="0" />
+        <table>
+          <tr>
+            <td><button>c</button></td>
+            <td><button>ac</button></td>
+            <td><button>%</button></td>
+            <td><button>/</button></td>
+          </tr>
+          <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button>X</button></td>
+          </tr>
+          <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button>-</button></td>
+          </tr>
+          <tr>
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button>+</button></td>
+          </tr>
+          <tr>
+            <td><button>00</button></td>
+            <td><button>0</button></td>
+            <td><button>.</button></td>
+            <td><button>=</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Percentage Calculator</h1>
+
+    <button onclick="takeInput()">Start Taking marks for subject.</button>
+
+    <h3 id="english">English: <span id="sub1"></span></h3>
+    <h3 id="Hindi">Hindi: <span id="sub2"></span></h3>
+    </h3>
+    <h3 id="Maths">Maths: <span id="sub3"></span></h3>
+    </h3>
+    <h3 id="Science">Science: <span id="sub4"></span></h3>
+    </h3>
+    <h3 id="Social">Social Science: <span id="sub5"></span></h3>
+    </h3>
+
+    <h2 id="Average">Average of all Subject: <span id="average1"></span></h2>
+
+    <button id="avg" onclick="calculateAverage()">Clculate Average</button>
+
+    <h2 id="percentage">Totel Percentage: <span id="persentage1"></span></h2>
+
+    <button id="per" onclick="claculatePercentage()">Calculate Percentage</button>
+
+    <script>
+
+        var englishMarks = 0
+        var hindiMarks = 0
+        var mathsMarks = 0
+        var scienceMarks = 0
+        var socialScienceMarks = 0
+
+
+        function takeInput() {
+
+            var englishElement = document.getElementById('english').textContent
+            while (true) {
+                englishMarks = prompt(`Please Enter the marks for ${englishElement}`)
+                englishMarks = parseInt(englishMarks)
+                if (englishMarks > 100 || englishMarks < 0) {
+                    alert("Please Enter the valid marks range 0-100")
+                }
+                else {
+                    break
+                }
+
+            }
+            var englishMarksElement = document.getElementById('sub1')
+            englishMarksElement.textContent = englishMarks
+
+
+            //hindi
+
+            var hindiElement = document.getElementById('Hindi').textContent
+            while (true) {
+                hindiMarks = prompt(`Please Enter the marks for ${hindiElement}`)
+                hindiMarks = parseInt(hindiMarks)
+                if (hindiMarks > 100 || hindiMarks < 0) {
+                    alert("Please Enter the valid marks range 0-100")
+                }
+                else {
+                    break
+                }
+
+            }
+            var hindiMarksElement = document.getElementById('sub2')
+            hindiMarksElement.textContent = hindiMarks
+
+
+            // maths
+
+
+            var mathsElement = document.getElementById('Maths').textContent
+            while (true) {
+                mathsMarks = prompt(`Please Enter the marks for ${mathsElement}`)
+                mathsMarks = parseInt(mathsMarks)
+                if (mathsMarks > 100 || mathsMarks < 0) {
+                    alert("Please Enter the valid marks range 0-100")
+                }
+                else {
+                    break
+                }
+
+            }
+            var mathsMarksElement = document.getElementById('sub3')
+            mathsMarksElement.textContent = mathsMarks
+
+
+            // Science
+
+
+            var scienceElement = document.getElementById('Science').textContent
+            while (true) {
+                scienceMarks = prompt(`Please Enter the marks for ${scienceElement}`)
+                scienceMarks = parseInt(scienceMarks)
+                if (scienceMarks > 100 || scienceMarks < 0) {
+                    alert("Please Enter the valid marks range 0-100")
+                }
+                else {
+                    break
+                }
+
+            }
+            var scienceMarksElement = document.getElementById('sub4')
+            scienceMarksElement.textContent = scienceMarks
+
+
+
+            //social science
+
+
+            var socialScienceElement = document.getElementById('Social').textContent
+            while (true) {
+                socialScienceMarks = prompt(`Please Enter the marks for ${socialScienceElement}`)
+                socialScienceMarks = parseInt(socialScienceMarks)
+                if (socialScienceMarks > 100 || socialScienceMarks < 0) {
+                    alert("Please Enter the valid marks range 0-100")
+                }
+                else {
+                    break
+                }
+
+            }
+            var socialScienceMarksElement = document.getElementById('sub5')
+            socialScienceMarksElement.textContent = socialScienceMarks
+
+        }
+        var average = 0
+        function calculateAverage() {
+
+            average = (englishMarks + hindiMarks + mathsMarks + scienceMarks + socialScienceMarks) / 5
+            document.getElementById('average1').textContent = average
+        }
+
+
+        function claculatePercentage() {
+
+            let totalMarks = englishMarks + hindiMarks + mathsMarks + scienceMarks + socialScienceMarks
+
+            let percentageValue = (totalMarks / 500) * 100
+
+            var percentageElement = document.getElementById('persentage1').textContent = percentageValue
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.main {
+  text-align: center;
+}
+table {
+  margin: auto;
+}
+input {
+  font-size: 34px;
+  border: 5px solid rgb(17, 255, 0);
+  border-radius: 9px;
+  margin: 20px;
+  height: 60px;
+  text-align: right;
+  padding: 0px 20px;
+}
+input::placeholder {
+  color: red;
+  font-weight: bold;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  font-size: 30px;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: none;
+  margin: 5px;
+}
+button:hover {
+  cursor: pointer;
+  border: 4px solid rgb(17, 255, 0);
+  font-size: 40px;
+}
+.calculater {
+  display: inline-block;
+  background-color: brown;
+  padding: 20px;
+  border-radius: 10px;
+}

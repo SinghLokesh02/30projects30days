@@ -14,7 +14,7 @@ const typewriter = () => {
     i = 0;
     s = "";
   }
-  setTimeout(typewriter, 200);
+  setTimeout(typewriter, 100);
 };
 
 typewriter();

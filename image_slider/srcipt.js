@@ -20,6 +20,7 @@ function prev() {
   }
   img.src = arr[index];
   console.log(arr[index]);
+
 }
 
 // Function for next image

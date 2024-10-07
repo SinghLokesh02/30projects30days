@@ -3,18 +3,87 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html,
 body {
-  position: relative;
+  background-image: url("./bgc.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
-#rect {
-  height: 200px;
-  width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  background-color: rgb(255, 0, 0, 0.1);
+.container {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container{
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 20px;
+  border-radius: 20px;
+}
+.main-container label{
+  color: white;
+   
+}
+.box {
+  align-self: center;
+  margin: 0.6rem;
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+label:first-child {
+  color: lime;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+label {
+  color: white;
+  font-size: 18px;
+}
+
+input {
+  text-align: left;
+}
+
+.start {
+  border: none;
+  color: white;
+  outline: none;
+  padding: 0.4rem 0.8rem;
+  background-color: red;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: .4rem  ;
+}
+
+.start:hover {
+  background-color: lime;
+  transition: all 1s;
+}
+
+.next-button {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Styling for The Correct and Wrong Answer */
+
+.main-container h2{
+    color: red;
+    margin: 10px;
+}
+.main-container .correct{
+    color: lime;
+    margin: 10px;
+}
+.main-container p:last-child{
+    color: rgb(0, 187, 255);
+    margin: 10px;
 }

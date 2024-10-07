@@ -9,14 +9,19 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.container {
+  overflow: hidden;
+}
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+  width: 150vw;
 }
 .common {
   width: 300px;
+  height: 250px;
   text-align: center;
   background-color: white;
   padding: 3vh 0px;
@@ -51,4 +56,29 @@ p {
   color: rgb(0, 106, 255);
   font-style: italic;
   font-weight: 700;
+}
+
+/*  Buttons Styling*/
+.btn-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 15px;
+}
+
+button {
+  background-color: red;
+  border: none;
+  padding: 8px 10px;
+  color: white;
+  font-weight: bold;
+}
+button:hover {
+  background-color: rgb(225, 37, 37);
+}
+
+#next-btn,
+#prev-btn {
+  border-radius: 10px;
 }

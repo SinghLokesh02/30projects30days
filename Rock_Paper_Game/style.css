@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main-container {
+  padding: 20px;
+}
+h1 {
+  color: red;
+  text-align: center;
+}
+.Takeinput {
+  margin: 3vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  display: block;
+  width: 30%;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  min-width: 300px;
+}
+input[type="text"] {
+  outline: 0.8px solid;
+  padding-left: 10px;
+}
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid red;
+  padding-left: 10px;
+}
+input[type="submit"] {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  transition-duration: 0.8s;
+  background-color: lime;
+}
