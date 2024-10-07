@@ -60,6 +60,7 @@
         margin: 10px auto;
         text-align: center;
         width: 90%;
+        border-radius: 10px;
       }
       .btn {
         padding: 0.4rem;
