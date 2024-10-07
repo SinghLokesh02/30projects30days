@@ -11,7 +11,7 @@ Welcome to the **Quiz App** project! This app is part of my *30 Projects in 30 D
 - Responsive design for different screen sizes (mobile-friendly)
 
 Live Demo
-Check out the live demo of the Quiz App here: Quiz App Live Demo [Live Demo](https://dummy-react-frontend.vercel.app/)
+Check out the live demo of the Quiz App here: Quiz App Live Demo [Live Demo](https://quizapp-tau-ebon.vercel.app/)
 
 ## Project Overview
 
