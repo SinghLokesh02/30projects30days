@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, rgba(254, 0, 0, 0.5) 0%, rgb(241, 214, 15) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with opacity for elegance */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Elevated shadow effect */
+    padding: 30px;
+    width: 320px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect on hover */
+}
+
+.container:hover {
+    transform: translateY(-10px); /* Slight elevation on hover */
+}
+
+.inner {
+    padding: 20px 0;
+}
+
+.month {
+    font-size: 24px;
+    color: white;
+    background-color: crimson;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for better emphasis */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.day {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.date {
+    font-size: 50px;
+    color: #333;
+    margin: 15px 0;
+    font-weight: bold;
+    letter-spacing: 2px; /* Slightly spaced for modern look */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds depth to the date */
+}
+
+.year {
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
