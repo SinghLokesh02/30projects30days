@@ -39,6 +39,10 @@ li {
   column-gap: 20px;
   border-radius: 10px;
 }
+li:hover {
+  transform: translateX(5px);
+  transition: all 0.3s;
+}
 
 li:hover {
   background-color: rgba(128, 128, 128, 0.54);
