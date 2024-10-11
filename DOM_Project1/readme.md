@@ -2,9 +2,9 @@
 
 Welcome to the **Add Friend Feature** project! This web application demonstrates a simple friend request interface that allows users to add friends with a single button click. This is a great foundational project for understanding basic web interactivity.
 
-## 🔗 [Live Demo](https://insta-story-liker.vercel.app/)
+## 🔗 [Live Demo](https://add-friend-nu.vercel.app/)
 
-Check out the **Add Friend Feature** live by visiting the [live demo](https://insta-story-liker.vercel.app/).
+Check out the **Add Friend Feature** live by visiting the [live demo](https://add-friend-nu.vercel.app/).
 
 ## 📖 Project Overview
 
