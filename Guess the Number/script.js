@@ -29,18 +29,16 @@ function checkEmpty(str) {
   return count == str.length ? 0 : 1;
 }
 
-
 // Function to Generatr Random Number
 function GenerateRandomNumber() {
   return Math.floor(Math.random() * 100);
 }
 
-
 let rand = GenerateRandomNumber();
 let check = 0;
 
 // Total count Initially is 10
-let total_count = 5;
+let total_count = 10;
 submit.addEventListener("click", () => {
   console.log(total_count);
   let input_data = get_input.value;

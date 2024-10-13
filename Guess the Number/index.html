@@ -6,30 +6,45 @@
     <title>Number Guessing Game</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSai1cAwjMy8O6DlxqvVGMSdxUCpnzb9odHA&s"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="A fun and interactive number guessing game where players try to guess a random number between 1 and 100 within 10 attempts. Challenge yourself and improve your guessing skills!"
+    />
+    <meta
+      name="keywords"
+      content="Number Guessing Game, Guess the Number, JavaScript Game, Fun Game, Random Number, Interactive Game, Coding Project, HTML Game, JavaScript, Beginner Project"
+    />
   </head>
   <body>
-    <h1>Guess The Number Game</h1>
-    <p>Try and guess a random number between 1 to 100</p>
-    <p>You have 10 Attempt for guessing the game</p>
+    <main class="container">
+      <h1>Guess The Number Game</h1>
+      <p>Try and guess a random number between 1 to 100</p>
+      <p>You have 10 Attempt for guessing the game</p>
 
-    <label for="guessField">Enter Your Guess Here </label>
-    <div class="input">
-      <input
-        type="text"
-        id="guessField"
-        class="guessField"
-        placeholder="Enter Guess"
-      />
-      <input type="submit" value="Submit guess" class="guessSubmit" />
-      <input type="submit" value="Reset" class="reset" />
-    </div>
+      <label for="guessField">Enter Your Guess Here </label>
+      <div class="input">
+        <input
+          type="text"
+          id="guessField"
+          class="guessField"
+          placeholder="Enter Guess"
+        />
+        <input type="submit" value="Submit guess" class="guessSubmit" />
+        <input type="submit" value="Reset" class="reset" />
+      </div>
 
-    <div class="resultParas">
-      <p class="guesses">
-        Total Guess Remained : <span class="Guess_remain">5</span>
-      </p>
-      <p class="lowOrHi">Too low</p>
-      <p class="lastResult"></p>
-    </div>
+      <div class="resultParas">
+        <p class="guesses">
+          Total Guess Remained : <span class="Guess_remain">10</span>
+        </p>
+        <p class="lowOrHi">Too low</p>
+        <p class="lastResult"></p>
+      </div>
+    </main>
   </body>
 </html>
