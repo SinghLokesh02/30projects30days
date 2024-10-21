@@ -20,6 +20,7 @@ let ans = document.querySelector(".ans");
 let button = document.querySelector("input[type='submit']");
 let heights = document.querySelectorAll(".height");
 button.addEventListener("click", (e) => {
+  ans.textContent = "";
   let index = 0;
   let itemFound = false;
   let dataTosearch = document.querySelector("#inputElement").value;
