@@ -2,6 +2,10 @@
 
 Welcome to the **Profile Statistics** project! This project is a simple, elegant display of various professional stats that highlight an individual’s experience, accomplishments, and projects in a visually appealing way.
 
+## 🔗 [Live Demo](https://profile-statistics-ten.vercel.app/)
+
+Experience the **Profile Statistics** in action by trying out the [live demo](https://profile-statistics-ten.vercel.app/).
+
 ## 📖 Project Overview
 
 The **Profile Statistics** project allows users to showcase their professional statistics, such as years of experience, websites created, and apps developed. This can be an excellent addition to personal websites, portfolios, or resumes to make a strong impression.
