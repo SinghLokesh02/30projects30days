@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+
+    <meta
+      name="keywords"
+      content="Form Validation, JavaScript, HTML, CSS, User Input Validation, Web Development, Interactive Form"
+    />
+    <meta
+      name="description"
+      content="A JavaScript-based form validation project to validate user input fields including name, phone number, email, and password, ensuring correct data entry for secure submissions."
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="center">Javasrcipt Form Validation</h1>
+    <div class="container">
+      <form action="" name="form" onsubmit="return valid()">
+        <input type="text" placeholder="Enter Your Name" name="name" required />
+        <span id="name"></span>
+         
+        <input
+          type="text"
+          placeholder="Enter Your Phone Number"
+          name="phone"
+          required
+        />
+        <span id="phone"></span>
+         
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          name="email"
+          required
+        />
+        <span id="email"></span>
+         
+
+        <input type="password" name="pass" placeholder="Enter Password" />
+        <span id="pass"></span>
+
+        
+        <input
+          type="password"
+          name="cpass"
+          placeholder="Confirm Password"
+          required
+        />
+        <span id="cpass"></span>
+      
+
+        <input type="submit" value="Submit" id="btn" />
+      </form>
+    </div>
+  </body>
+</html>
