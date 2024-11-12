@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.541);
-  padding: 10px;
+  padding: 5px;
   align-items: center;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -34,8 +34,9 @@ ul {
 }
 
 li {
-  padding: 10px;
+  padding: 5px;
   display: flex;
+  align-items: center;
   column-gap: 20px;
   border-radius: 10px;
 }
