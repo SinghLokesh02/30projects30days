@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(131, 58, 180, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  /* background-image: url("./img/pexels-photo-5878510.webp"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 15px;
+}
+.container-data {
+  display: flex;
+  gap: 15px;
+}
+.container-box {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  border-radius: 10px;
+  gap: 15px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(185, 182, 220, 1) 15%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+p:first-of-type {
+  font-weight: bolder;
+  font-size: 25px;
+}
+i {
+  font-size: 40px;
+}
+.fa-virus {
+  color: red;
+}
+.fa-skull {
+  color: white;
+}
+.fa-check {
+  color: lime;
+}
+.state {
+  text-align: center;
+  font-weight: 900;
+}
+.box {
+  margin: auto;
+  font-size: 20px;
+}
+input {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+button {
+  margin: 0px 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(185, 182, 220, 1) 15%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-size: 20px;
+}
+
+.container-box p:not(:first-of-type) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.no-data {
+  position: absolute;
+  top: 20px;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px;
+}
+@media (width <= 768px) {
+  body {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  .container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .container-data {
+    flex-direction: column;
+  }
+  .container-box {
+    margin: auto;
+    width: 90%;
+  }
+  .box:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+  }
+  .box:first-child button,
+  input {
+    width: 100%;
+    margin: 0px;
+  }
+  .no-data {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+  }
+  h1 {
+    margin: 15px;
+  }
+}
