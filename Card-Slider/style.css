@@ -8,24 +8,38 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .container {
-  overflow: hidden;
+  overflow:hidden;
+  width: fit-content;
+  margin: auto;
+  background-color: lime;
+  width: calc(250px *4 + 20px*4);
 }
 
 .wrapper {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 150vw;
+  overflow: hidden;
+
+  @media only screen and (max-width: 300px) {
+    
+    .wrapper {
+      max-width: 300px;
+    }
+  }
 }
 .common {
-  width: 300px;
+  min-width: 250px;
   height: 250px;
   text-align: center;
   background-color: white;
   padding: 3vh 0px;
-  margin: 2vh;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;

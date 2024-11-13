@@ -17,10 +17,11 @@ body {
 
 .container {
   margin: 3vh auto;
-  width: 80%;
+  width: 60%;
   height: 50vh;
   background-color: aliceblue;
   border-radius: 10px;
+  min-width: 350px
 }
 .slider {
   height: 100%;
@@ -61,20 +62,4 @@ button:hover {
     width: 100%;
   }
 }
-
-/* Slide Image with click on Next or Previous Button */
-
-.slideRight{
-  animation-name: Slideright;
-  animation-duration: 3s;
-}
-
-@keyframes Slideright {
-  from{
-    transform: translateX(0%);
-  }
-  to{
-    transform: translateX(100%);
-
-  }
-}
+ 

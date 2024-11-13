@@ -1,26 +1,26 @@
-let a1 = "https://source.unsplash.com/random/900x400/?fruit";
-let a = "https://source.unsplash.com/random/900x400/?coding";
-let b = "https://source.unsplash.com/random/900x400/?water";
-let c = "https://source.unsplash.com/random/900x400/?river";
-let d = "https://source.unsplash.com/random/900x400/?sea";
-
-let arr = [a1, a, b, c, d];
-
+let arr = [
+  "./img/img-1.jpeg",
+  "./img/img-2.jpeg",
+  "./img/img-3.jpeg",
+  "./img/img-4.jpeg",
+  "./img/img-5.jpeg",
+];
+let index = 0;
 function prev() {
   var img = document.getElementById("slideImg");
   console.log(img);
   var imgSrc = img.src;
-  var index = arr.indexOf(imgSrc);
-  console.log(index);
-  if (index == 0) {
+  let indexLocal = imgSrc.lastIndexOf("img");
+  let imageFilePath = `./img/${imgSrc.substring(indexLocal, indexLocal + 5)}.jpeg`;
+  index = arr.indexOf(imageFilePath);
+  if (index <= 0) {
     index = arr.length - 1;
-    console.log(index);
-  } else if (index > 0) {
+  } else {
     index--;
   }
+  console.log(index);
+  
   img.src = arr[index];
-  console.log(arr[index]);
-
 }
 
 // Function for next image
@@ -28,18 +28,14 @@ function next() {
   var img = document.getElementById("slideImg");
   console.log(img);
   var imgSrc = img.src;
-  var index = arr.indexOf(imgSrc);
-  console.log(index);
-  if (index == arr.length - 1) {
+  let indexLocal = imgSrc.lastIndexOf("img");
+  let imageFilePath = `./img/${imgSrc.substring(indexLocal, indexLocal + 5)}.jpeg`;
+  index = arr.indexOf(imageFilePath);
+  if (index >= 4) {
     index = 0;
-    console.log(index);
-  } else if (index < arr.length - 1) {
+  } else {
     index++;
   }
   img.src = arr[index];
-  console.log(arr[index]);
+  
 }
-
-
- 
-
