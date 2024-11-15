@@ -6,12 +6,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #ecf0f1;
+  background: #cc0707;
 }
-*:not(.container, .main, .search, #search, #btn, #word, .mean) {
-  user-select: none;
-  background: #00b894;
-}
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -20,78 +17,84 @@ body {
   align-items: center;
 }
 .main {
-  height: 50vh;
+  padding: 50px;
+  min-height: 50vh;
   border-radius: 20px;
   width: 50vw;
   background: #d6e4e7;
 }
+
 .search {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin: 10px 0px;
+  gap: 20px;
+  font-size: 1.5rem;
 }
-#search {
-  position: relative;
-  top: 50px;
-  left: 0px;
-  width: 60%;
-  height: 50px;
-  border-radius: 10px;
+.search input {
+  width: 90%;
+  padding: 10px;
   border: none;
+  border-bottom: 3px solid #00b894;
   outline: none;
-  padding-left: 10px;
-  font-size: 20px;
+  background: #d6e4e7;
 }
 
-#search:focus {
-  border: 2px solid #00b894;
-  box-shadow: 0 0 10px #00b894;
-}
-
-#search::placeholder {
-  font-size: 20px;
-  font-weight: 500;
+.search input::placeholder {
   color: #00b894;
 }
 
-#btn {
-  position: relative;
-  top: 50px;
-  left: 0px;
-  width: 20%;
-  height: 50px;
+.search input:focus {
+  background-color: #d6e4e7;
+}
+
+.search button.btn-get {
+  padding: 10px 55px;
   border-radius: 10px;
   border: none;
   outline: none;
   background: #00b894;
   color: white;
-  font-size: 20px;
-  font-weight: 500;
+  cursor: pointer;
+  transition-duration: 0.8s;
+}
+
+.search button.btn-get:hover {
+  background: #039b7d;
+}
+/* output */
+
+.output {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.word-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.word {
+  width: 90%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #00b894;
   cursor: pointer;
 }
 
-/* output */
-
-#output {
-  width: 100%;
-  height: 20vh;
-  position: relative;
-  top: 70px;
-  background-color: #d6e4e7;
-  overflow-y: hidden;
-  margin-bottom: 5px;
+.meaning {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: serif;
 }
-.mean {
-  margin: auto;
-}
-.mean #word {
-  text-align: center;
-  background-color: #d6e4e7;
-  margin: 0;
-}
-#meaning {
+#part-of-speech {
   background-color: #d6e4e7;
   margin-left: 20px;
+  text-align: center;
 }
 
 #not_found {
@@ -99,21 +102,32 @@ body {
   text-align: center;
 }
 
-
-
-/* Media Query */
-@media screen and (max-width: 640px) {
-    
-  .search{
+/* Responsive */
+@media (max-width: 1100px) {
+  .main {
+    width: 90vw;
+  }
+}
+@media (max-width: 768px) {
+  .container,
+  .main {
+    width: 100%;
+  }
+  .search {
+    display: flex;
     flex-direction: column;
-    margin: auto;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
   }
-  #search{
-    margin: auto;
+  #search,
+  #btn {
+    width: 100%;
   }
-  #btn{
-    margin: auto;
-    
+}
+
+@media (max-width: 400px) {
+  .main {
+    padding: 20px;
   }
-  }
+}
