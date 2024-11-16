@@ -1,6 +1,6 @@
 # Quiz App
 
-Welcome to the **Quiz App** project! This application is part of my *30 Projects in 30 Days* challenge, where I aim to develop 30 unique projects in 30 days. The **Quiz App** is a web-based platform that tests users' knowledge across various topics in a fun and interactive way.
+Welcome to the **Quiz App** project! This application is part of my _30 Projects in 30 Days_ challenge, where I aim to develop 30 unique projects in 30 days. The **Quiz App** is a web-based platform that tests users' knowledge across various topics in a fun and interactive way.
 
 ## 🔗 [Live Demo](https://quizapp-tau-ebon.vercel.app/)
 
@@ -11,6 +11,7 @@ Experience the **Quiz App** in action by trying out the [live demo](https://quiz
 The **Quiz App** provides an engaging quiz experience with real-time feedback, score tracking, and a built-in timer to add some challenge. It’s designed to be responsive and works well on different devices, including mobile.
 
 ### Key Features:
+
 - Interactive multiple-choice questions
 - Instant feedback on correct/incorrect answers
 - Score calculation at the end of the quiz
@@ -24,27 +25,29 @@ The **Quiz App** was built using the following technologies:
 - **HTML5**: Structure of the web app
 - **CSS3**: Styling using CSS custom properties (variables), Flexbox, and Grid for layout
 - **JavaScript (ES6+)**: Handles quiz logic, DOM manipulation, and score calculation
-- **Other Tools**: 
+- **Other Tools**:
   - Webpack or Parcel (for bundling)
-  
+
 ## ⚙️ Installation
 
 To run the **Quiz App** locally, follow these steps:
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/SinghLokesh02/30projects30days.git
-    ```
+
+   ```bash
+   git clone https://github.com/SinghLokesh02/30projects30days.git
+   ```
 
 2. Navigate to the **Quiz App** folder:
-    ```bash
-    cd 30projects30days/QuizApp
-    ```
+
+   ```bash
+   cd 30projects30days/QuizApp
+   ```
 
 3. Open the `index.html` file in your browser:
-    ```bash
-    open index.html
-    ```
+   ```bash
+   open index.html
+   ```
 
 ## 🚀 Usage
 
@@ -69,5 +72,3 @@ Feel free to open issues or submit pull requests to improve the project.
 ## 📜 License
 
 This project is licensed under the **MIT License**. Check out the [LICENSE](../LICENSE) file for more details.
-
- 
