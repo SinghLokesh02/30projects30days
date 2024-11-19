@@ -2,9 +2,9 @@
 
 Welcome to the **Form Validation** project! This application is a form validation utility created with JavaScript to ensure users enter valid information. It’s part of a collection of small web projects to build practical coding skills.
 
-## 🔗 [Live Demo]()
+## 🔗 [Live Demo](https://form-validations-eight.vercel.app/)
 
-Check out the **Form Validation** application live by visiting the [live demo]().
+Check out the **Form Validation** application live by visiting the [live demo](https://form-validations-eight.vercel.app/).
 
 
 ## 📖 Project Overview
