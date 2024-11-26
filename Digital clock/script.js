@@ -13,9 +13,7 @@ let setData = () => {
   if (hours > 12) {
     hours -= 12;
     meridian = "PM";
-  }
-  if (hours === 0) {
-    hours = 12;
+  } else {
     meridian = "AM";
   }
   hour.innerText = hours;

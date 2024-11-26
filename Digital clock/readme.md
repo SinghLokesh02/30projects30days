@@ -2,6 +2,11 @@
 
 The **Digital Clock** project is a web application that displays the current time dynamically, including hours, minutes, seconds, and AM/PM indicators. The project is visually appealing and updates in real-time.
 
+## 🔗 [Live Demo](https://digital-clock-eight-mu.vercel.app/)
+
+Check out the **Dictionary App** application live by visiting the [live demo](https://digital-clock-eight-mu.vercel.app/).
+
+
 ## 📖 Project Overview
 
 This project serves as a simple yet elegant implementation of a digital clock using HTML, CSS, and JavaScript. It features a responsive design and smooth animations, making it a perfect addition to any web development portfolio.
