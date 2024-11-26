@@ -4,11 +4,22 @@ let getbtn = document.getElementById("btn");
 let output = document.getElementById("output");
 
 getbtn.addEventListener("click", function () {
-   
+  let searchTerm = search.value.trim();
+  if (!searchTerm) {
+    output.innerHTML = `<h3 id="not_found">Please enter a word</h3>`;
+    return;
+  }
+
+  output.innerHTML = `<div class="spinner-border text-primary"></div>`;
+
   fetch(url + search.value)
-    .then((response) => response.json())
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
     .then((data) => {
-       
       let partOfSpeech = data[0].meanings[0].partOfSpeech;
       let meaning = data[0].meanings[0].definitions[0].definition;
       let example =
@@ -42,6 +53,10 @@ getbtn.addEventListener("click", function () {
       }
     })
     .catch((error) => {
-      output.innerHTML = `<h3 id="not_found">Word Not Found</h3>`;
+      if (error.message.includes("404")) {
+        output.innerHTML = `<h3 id="not_found">Word not found</h3>`;
+      } else {
+        output.innerHTML = `<h3 id="not_found">Network or server error. Please try again later.</h3>`;
+      }
     });
 });
