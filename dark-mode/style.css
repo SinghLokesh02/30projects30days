@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  height: 100vh;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.white {
+  background-color: white !important;
+}
+.parent {
+  background-color: rgba(51, 48, 48, 0.198);
+  width: 80px;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 30px;
+}
+.child {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  animation-duration: 1s;
+  position: relative;
+}
+.black {
+  background-color: black;
+}
+.toggle-right {
+  animation-fill-mode: forwards;
+  animation-name: move-right;
+}
+
+@keyframes move-right {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 42px;
+  }
+}
+.toggle-left {
+  animation-name: move-left;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-left {
+  0% {
+    left: 42px;
+  }
+  100% {
+    left: 0px;
+  }
+}
