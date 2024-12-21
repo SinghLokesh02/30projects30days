@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+nav div i {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.serach {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: #ffffff;
+  margin: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.serach input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.serach select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.bold{
+  font-weight: bolder;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 1rem 0.5rem;
+  color: #444;
+}
+
+.card p {
+  margin: 0.5rem 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+/* Dark Mode Styles */
+body.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+ 
+body.dark nav {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+}
+body.dark nav h2 {
+  color: white;
+}
+
+body.dark .card h2{
+  color: white;
+}
+body.dark nav div i {
+  color: #f5f5f5;
+}
+
+body.dark .serach {
+  background-color: #2c2c2c;
+}
+
+body.dark .serach input,
+body.dark .serach select {
+  background-color: #3c3c3c;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+body.dark .card {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+}
+
+body.dark .card p {
+  color: #ccc;
+}
+
+
+@media (width<=768px) {
+  .serach{
+    flex-direction: column;
+  }
+  .serach input {
+    width: 100%;
+  }
+  .serach select {
+    width: 100%;
+  }
+   nav{
+    padding: 1rem;
+  }
+  nav h2{
+    font-size: 1.2rem;
+  }
+  
+}
