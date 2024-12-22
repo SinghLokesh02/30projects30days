@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Profile Fetcher</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+
+    <meta
+      name="keywords"
+      content="GitHub Profile Fetcher, GitHub API, JavaScript, HTML, CSS, User Profile, GitHub Statistics"
+    />
+    <meta
+      name="description"
+      content="A JavaScript-based GitHub Profile Fetcher application that retrieves and displays a user's GitHub profile details, including profile picture, bio, followers, and public repositories."
+    />
+  </head>
+  <body>
+    <h1 class="text-center text-success my-5">GitHub Profile Fetcher</h1>
+
+    <div class="container small">
+      <input type="text" id="input" placeholder="Enter Your github UserName" />
+      <input type="submit" value="Submit" id="btn" />
+    </div>
+
+    <div class="container flex show_data my-5">
+      <div class="container center">
+        <img src="" alt="" id="avatar_url" class="img-fluid" />
+      </div>
+      <div class="down">
+        <div class="labels">
+          <label for="name">Name : </label>
+          <label for="Bio">Bio : </label>
+          <label for="Followers">Followers : </label>
+          <label for="Following">Following : </label>
+          <label for="Pulic Respository">Pulic Respository : </label>
+          <label for="Publich Gists">Publich Gists : </label>
+        </div>
+        <div class="get_data">
+          <span id="name"></span><br />
+          <span id="bio"></span><br />
+          <span id="followers"></span><br />
+          <span id="following"></span><br />
+          <span id="public_repos"></span><br />
+          <span id="public_gists"></span><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

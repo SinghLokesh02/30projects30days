@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Range Dependent Box</title>
+    <style>
+      body {
+        position: relative;
+        height: 100vh;
+        background-color: #f1f1f1;
+        margin: auto;
+      }
+      .container {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .box {
+        width: 50%;
+        background-color: lime;
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <label for="range">Range:</label>
+      <input type="range" id="range" min="1" max="100" value="20" />
+    </div>
+
+    <script>
+      let box = document.querySelector(".box");
+      let range = document.getElementById("range");
+
+      range.addEventListener("input", function () {
+        box.style.width = this.value + "%";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling of Console</title>
+</head>
+<body style="height: 100vh; display: flex;justify-content: center;align-items: center;">
+    <h1 style="color: red;">Open Console</h1>
+    <script>
+        let style = `
+           font-size: 20px;,
+           font-family: Arial, sans-serif;
+           background-color: red;
+           padding: 10px;
+           border: 1px solid #ccc;
+           color: white;
+           border-radius:20px;
+           `;
+        console.log("%c Hello Lokesh", style);
+        console.log("%c Hey My name is Lokesh Singh", style);
+        console.log(
+          "%c Text1 %c Text 2",
+          "color: blue;background:red;padding:10px",
+          "color: green; font-weight: bold;background:grey;padding:10px;margin-left:10px"
+        );
+      </script>
+</body>
+</html>
