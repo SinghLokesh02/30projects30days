@@ -66,29 +66,52 @@ function showData(data) {
        <h2>${element.name.common}</h2>
        <p> <span class="bold">Population</span> : ${element.population.toLocaleString()}</p>
        <p><span class="bold">Region</span> : ${element.region}</p>
-       <p><span class="bold">Capital</span> : ${element.capital ? element.capital[0] : "N/A"}</p>
+       <p><span class="bold">Capital</span> : ${
+         element.capital ? element.capital[0] : "N/A"
+       }</p>
       `;
     main.appendChild(div);
+    div.addEventListener("click", () => {
+      showDetails(element);
+    });
   });
 }
 
+// Code for click on Individual Cards
 
+function showDetails(country) {
+  document.querySelector(".search").style.display = "none";
+  main.classList.remove("main");
+  main.innerHTML = `
+      <button class="back-btn">Back</button>
+      <div class="box-new">
+        <div class="img-box"><img src=${country.flags.svg} alt="Flag of ${
+    country.name.common
+  }"></div>
+        <div class="box-text" id="boxtext">
+          <h2>${country.name.common}</h2>
+          <p><span class="bold">Native Name</span>: ${country.name.official}</p>
+          <p><span class="bold">Population</span>: ${country.population}</p>
+          <p><span class="bold">Region</span>: ${country.region}</p>
+          <p><span class="bold">Sub Region</span>: ${country.subregion}</p>
+          <p><span class="bold">Capital</span>: ${country.capital}</p>
+          <p><span class="bold">Languages</span>: ${Object.values(
+            country.languages || {}
+          ).join(", ")}</p>
+          <p><span class="bold">Currencies</span>: ${Object.values(
+            country.currencies || {}
+          )
+            .map((currency) => currency.name)
+            .join(", ")}</p>
+          <p><span class="bold">Top Level DoallBox</span>: ${country.tld.join(
+            ", "
+          )}</p>
+        </div>
+      </div>
+    `;
 
-// Remove Inspect
-document.onkeydown = (e) => {
-  if (e.key == 123) {
-      e.preventDefault();
-  }
-  if (e.ctrlKey && e.shiftKey && e.key == 'I') {
-      e.preventDefault();
-  }
-  if (e.ctrlKey && e.shiftKey && e.key == 'C') {
-      e.preventDefault();
-  }
-  if (e.ctrlKey && e.shiftKey && e.key == 'J') {
-      e.preventDefault();
-  }
-  if (e.ctrlKey && e.key == 'U') {
-      e.preventDefault();
-  }
-};
+  let button = document.querySelector("button");
+  button.addEventListener("click", () => {
+    window.location.href = "./index.html";
+  });
+}
