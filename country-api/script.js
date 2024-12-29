@@ -89,7 +89,7 @@ function showDetails(country) {
     country.name.common
   }"></div>
         <div class="box-text" id="boxtext">
-          <h2>${country.name.common}</h2>
+          <h2 class="heading">${country.name.common}</h2>
           <p><span class="bold">Native Name</span>: ${country.name.official}</p>
           <p><span class="bold">Population</span>: ${country.population}</p>
           <p><span class="bold">Region</span>: ${country.region}</p>

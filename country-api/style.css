@@ -147,6 +147,15 @@ body.dark .card p {
   color: #ccc;
 }
 
+body.dark .box-new {
+  
+  background-color: #3c3c3c;
+}
+
+body.dark .back-btn {
+  background-color: red;
+}
+
 
 @media (width<=768px) {
   .search{
