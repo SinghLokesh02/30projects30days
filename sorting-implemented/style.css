@@ -15,8 +15,21 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.search-filter {
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (width<=769px) {
+  .search-filter {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
-select {
+select,
+input {
   width: 300px;
   padding: 10px;
   font-size: 16px;
@@ -28,7 +41,8 @@ select {
   transition: all 0.3s ease;
 }
 
-select:hover {
+select:hover,
+input:hover {
   border-color: #0056b3;
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
 }
@@ -80,7 +94,11 @@ main#foodContainer {
 }
 
 @media (max-width: 768px) {
-  select {
+  .search-filter {
+    width: 100%;
+  }
+  select,
+  input {
     width: 100%;
   }
 

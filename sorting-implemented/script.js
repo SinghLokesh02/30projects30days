@@ -198,3 +198,12 @@ function showData(data) {
     });
 }
 showData(foodData)
+
+
+// Search
+
+let search = document.querySelector(".search");
+search.addEventListener("input",()=>{
+    let filteredData = foodData.filter((element)=> element.foodName.toLowerCase().includes(search.value));
+    showData(filteredData)
+})
