@@ -202,8 +202,8 @@ showData(foodData)
 
 // Search
 
-let search = document.querySelector(".search");
+let search = document.querySelector(".search-input");
 search.addEventListener("input",()=>{
-    let filteredData = foodData.filter((element)=> element.foodName.toLowerCase().includes(search.value));
+    let filteredData = foodData.filter((element)=> element.foodName.toLowerCase().includes(search.value.toLowerCase()));
     showData(filteredData)
 })

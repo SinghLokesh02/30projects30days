@@ -24,15 +24,19 @@
   </head>
   <body>
     <div class="search-filter">
-      <input type="text" class="search" placeholder="Search Restaurant here"/>
-
+    <div class="heading">
+      <h1>Foodie</h1>
+      </div>
+     <div class="search">
+      <input type="text" class="search-input" placeholder="Search Restaurant here" />
       <select name="" id="">
-        <option value="">Select</option>
+        <option  selected="true" disabled="disabled">Select</option>
         <option value="sortByFoodName">Sort By Food Name</option>
         <option value="sortByPrice">Sort By Price</option>
         <option value="sortByRating">Sort By Rating</option>
         <option value="sortByDistance">Sort By Distance</option>
       </select>
+     </div>
     </div>
 
     <main id="foodContainer"></main>
