@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple Expense Tracker to manage and calculate expenses dynamically."
+    />
+    <meta
+      name="keywords"
+      content="Expense Tracker, Expense Management, JavaScript Project, Expense Table, Expense Calculator"
+    />
+    <meta name="author" content="Lokesh Singh" />
+
+    <link rel="shortcut icon" href="https://logodix.com/logo/1299984.png" type="image/x-icon">
+
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Expense Tracker</h1>
+    <div class="container">
+      <form action="">
+        <div class="name">
+          <label for="name">Enter Name of Expense</label>
+          <input type="text" placeholder="Enter name" id="name" />
+        </div>
+        <div class="cost">
+          <label for="cost">Enter Cost of Expense</label>
+          <input type="text" placeholder="Enter Cost" id="cost" />
+        </div>
+        <button type="submit" class="get-btn">Add</button>
+      </form>
+  
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Cost</th>
+        </tr>
+        <tbody class="tbody"></tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td id="total">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
