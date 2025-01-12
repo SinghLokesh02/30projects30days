@@ -2,9 +2,9 @@
 
 The **Expense Tracker** is a simple and efficient web application to manage and keep track of your expenses. Users can add the name and cost of expenses, view a summary in a table, and see the total expense calculated dynamically.
 
-## 🔗 [Live Demo]()
+## 🔗 [Live Demo](https://expense-tracker-mu-gray.vercel.app/)
 
-Check out the **Expense Tracker** live by visiting the [live demo]().
+Check out the **Expense Tracker** live by visiting the [live demo](https://expense-tracker-mu-gray.vercel.app/).
 
 ## 📖 Project Overview
 
