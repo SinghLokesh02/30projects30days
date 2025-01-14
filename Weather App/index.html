@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Weather App - Get real-time weather updates for any city worldwide. Check temperature, humidity, wind speed, and more in an elegant, responsive design."
+    />
+    <meta
+      name="keywords"
+      content="Weather App, Real-time Weather, OpenWeatherMap, Weather Forecast, Temperature, Humidity, Wind Speed, Atmospheric Pressure"
+    />
+    <meta name="author" content="Lokesh Singh" />
+    <meta name="robots" content="index, follow" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBkiqV-4_oStOhN5AyFZOjP2V4d_jtiVfCnA&s" type="image/x-icon">
+
+    <!-- Logo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="wrapper">
+        <div class="custom-shape-divider-top-1736768142">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <input type="text" placeholder="Enter City Name" id="city" />
+
+      <div class="city-data">
+        <h2 class="city-name">City Name</h2>
+        <h3 class="date">date</h3>
+        <p class="today-weather"></p>
+        <div class="image">
+          <img
+            src="https://openweathermap.org/img/wn/02d@4x.png"
+            alt=""
+            class="logo"
+          />
+        </div>
+        <div class="temperature">
+          <span class="h1"><span class="temp">30°C</span> &deg; C</span>
+        </div>
+        <div class="additional-info">
+          <div class="card card1">
+            <div class="individual-card">
+              <div class="logo">
+                <i class="ri-brain-line"></i>
+              </div>
+              <div class="text">
+                <p>Feels like</p>
+                <p class="feels-like">26.03 C</p>
+              </div>
+            </div>
+            <div class="individual-card">
+              <div class="logo">
+                <i class="ri-water-percent-line"></i>
+              </div>
+              <div class="text">
+                <p>Humidity</p>
+                <p class="humidity">27%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="individual-card">
+              <div class="logo">
+                <i class="ri-windy-line"></i>
+              </div>
+              <div class="text">
+                <p>Wind</p>
+                <p class="wind-speed">14.83 m/s</p>
+              </div>
+            </div>
+            <div class="individual-card">
+              <div class="logo">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <div class="text">
+                <p>Pressure</p>
+                <p class="pressure">1015pa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
