@@ -25,3 +25,6 @@ submit.addEventListener("click", (e) => {
     cost.value = "";
   }
 });
+
+
+// Add the functionality of Remove and Search
