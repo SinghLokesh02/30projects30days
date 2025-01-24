@@ -27,4 +27,3 @@ submit.addEventListener("click", (e) => {
 });
 
 
-// Add the functionality of Remove and Search
